@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 import { useTheme } from 'next-themes';
+import useSound from 'use-sound';
 // Icons
 import {
     BrandGithub,
@@ -11,10 +12,16 @@ import {
 //------------------------------------------------------
 
 
-const Navbar = () => {
+const Navbar = ({ handleCurrentTheme }) => {
     const { systemTheme, theme, setTheme } = useTheme();
     const [mounted, setMounted] = useState(false);
-
+    const [play] = useSound('/audios/lightswitch.mp3', {
+        volume: 0.4,
+        sprite: {
+            on: [0, 300],
+            off: [300, 500],
+        }
+    })
     useEffect(() => {
         setMounted(true);
     }, [])
@@ -26,7 +33,7 @@ const Navbar = () => {
             return (
                 <SunHigh
                     role='button'
-                    onClick={() => setTheme('light')}
+                    onClick={() => { setTheme('light'); handleCurrentTheme('light'); play({ id: 'on' }) }}
                     className='bg-blue-100 rounded-lg p-1 dark:bg-orange-300 flex items-center justify-center hover:ring-2 ring-orange-300 transition-all duration-300 focus:outline-none'
                 />
             )
@@ -34,9 +41,9 @@ const Navbar = () => {
             return (
                 <MoonStars
                     role='button'
-                    onClick={() => setTheme('dark')}
-                    className='bg-blue-400 rounded-lg p-1 dark:bg-slate-800 flex items-center justify-center hover:ring-2
-                    ring-blue-400 transition-all duration-300 focus:outline-none'
+                    onClick={() => { setTheme('dark'); handleCurrentTheme('dark'); play({ id: 'off' }) }}
+                    className='bg-[#84cdec] rounded-lg p-1 dark:bg-slate-800 flex items-center justify-center hover:ring-2
+                    ring-[#84cdec] transition-all duration-300 focus:outline-none'
                 />
             )
         }
@@ -45,7 +52,7 @@ const Navbar = () => {
     return (
         <div className='flex justify-between items-center my-4'>
             <img
-                className='w-[75px] h-[75px] rounded-full'
+                className='w-[15%] h-[15%] lg:w-[10%] lg:h-[10%] rounded-full'
                 src='/images/logo.png'
                 alt='Emad Code Logo'
             />

@@ -14,7 +14,9 @@
     "next-themes": "^0.2.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "tabler-icons-react": "^1.54.0"
+    "react-rough-notation": "^1.0.3",
+    "tabler-icons-react": "^1.54.0",
+    "use-sound": "^4.0.1"
   },
   "devDependencies": {
     "eslint": "8.23.0",

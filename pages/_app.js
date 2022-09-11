@@ -3,7 +3,7 @@ import { ThemeProvider } from 'next-themes';
 
 function MyApp({ Component, pageProps }) {
   return (
-    <ThemeProvider enableSystem={true} attribute='class'>
+    <ThemeProvider enableSystem={true} defaultTheme='dark' attribute='class'>
       <Component {...pageProps} />
     </ThemeProvider>
   )

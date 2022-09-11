@@ -9,6 +9,9 @@ module.exports = {
     extend: {
       colors: {
         bgDarkColor: '#242424',
+      },
+      fontFamily: {
+        customFont: ["Mulish", "sans-serif"],
       }
     },
   },
