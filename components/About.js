@@ -4,7 +4,7 @@ import { RoughNotation } from 'react-rough-notation';
 import Typewriter from "typewriter-effect";
 //------------------------------------------------------
 
-function Container({ currentTheme }) {
+function About({ currentTheme }) {
 
     const WavingHand = () => (
         <motion.div
@@ -32,7 +32,7 @@ function Container({ currentTheme }) {
             <div className='w-[25%] h-[25%]'>
                 <img className={`max-w rounded-t-xl rounded-b-xl`} src={`/images/me2.jpeg`} />
             </div>
-            <div className='w-2/3 py-12'>
+            <div className='lg:w-2/3 py-12'>
                 <h1 className=' text-xl md:text-3xl leading-normal md:leading-loose font-bold font-customFont'>
                     Hey There !
                     <WavingHand />
@@ -70,4 +70,4 @@ function Container({ currentTheme }) {
     );
 }
 
-export default Container
+export default About

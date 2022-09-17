@@ -2,8 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-    .dark {
-        @apply bg-bgDarkColor text-gray-50
+@layer components {
+    .heroButton {
+        @apply px-6 py-2 rounded-full uppercase text-sm tracking-widest text-gray-500 transition-all
     }
 }
