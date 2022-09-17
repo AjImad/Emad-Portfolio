@@ -39,16 +39,45 @@ function Hero() {
                 </h1>
                 <div className='pt-5'>
                     <Link href="#about">
-                        <button className='heroButton border border-[#242424] hover:border-[#F7AB0A]/40 hover:text-[#F7AB0A]/40'>About</button>
+                        <button
+                            className='heroButton
+                             border dark:border-[#242424] dark:hover:border-[#F7AB0A]/40 dark:hover:text-[#F7AB0A]/40
+                                    border-[#f0e7db] hover:border-[#88ccca] hover:text-[#88ccca]
+                             '
+                        >
+                            About
+                        </button>
                     </Link>
                     <Link href="#experience">
-                        <button className='heroButton border border-[#242424] hover:border-[#F7AB0A]/40 hover:text-[#F7AB0A]/40'>Experience</button>
+                        <button
+                            className='heroButton
+                             border dark:border-[#242424] dark:hover:border-[#F7AB0A]/40 dark:hover:text-[#F7AB0A]/40
+                                    border-[#f0e7db] hover:border-[#88ccca] hover:text-[#88ccca]
+                             '
+                        >
+                            Experience
+                        </button>
                     </Link>
                     <Link href="#skills">
-                        <button className='heroButton border border-[#242424] hover:border-[#F7AB0A]/40 hover:text-[#F7AB0A]/40'>Skills</button>
+                        <button
+                            className='heroButton
+                             border dark:border-[#242424] dark:hover:border-[#F7AB0A]/40 dark:hover:text-[#F7AB0A]/40
+                                    border-[#f0e7db] hover:border-[#88ccca] hover:text-[#88ccca]
+                             '
+                        >
+                            Skills
+                        </button>
                     </Link>
                     <Link href="#project">
-                        <button className='heroButton border border-[#242424] hover:border-[#F7AB0A]/40 hover:text-[#F7AB0A]/40'>Projects</button>
+                        <button
+                            className='heroButton
+                             border dark:border-[#242424] dark:hover:border-[#F7AB0A]/40 dark:hover:text-[#F7AB0A]/40
+                                    border-[#f0e7db] hover:border-[#88ccca] hover:text-[#88ccca]
+                             '
+                        >
+                            Projects
+
+                        </button>
                     </Link>
                 </div>
             </div>
