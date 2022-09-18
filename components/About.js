@@ -1,7 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { RoughNotation } from 'react-rough-notation';
-import Typewriter from "typewriter-effect";
+
 //------------------------------------------------------
 
 function About({ currentTheme }) {
@@ -28,45 +27,29 @@ function About({ currentTheme }) {
         </motion.div>
     );
     return (
-        <section className='mt-5 flex flex-row justify-between items-start'>
-            <div className='w-[25%] h-[25%]'>
-                <img className={`max-w rounded-t-xl rounded-b-xl`} src={`/images/me2.jpeg`} />
-            </div>
-            <div className='lg:w-2/3 py-12'>
-                <h1 className=' text-xl md:text-3xl leading-normal md:leading-loose font-bold font-customFont'>
-                    Hey There !
-                    <WavingHand />
-                    {" "}I'm{" "}
-                    <RoughNotation
-                        type='highlight'
-                        show={true}
-                        color={currentTheme === 'dark' ? '#fdba74' : '#84cdec'}
-                        animationDuration={1200}>
-                        Emad AJBAR
-                    </RoughNotation>
-                    .
-                    <span className={`${currentTheme === 'dark' ? 'text-orange-300' : 'text-[#84cdec]'}`}>
-                        <Typewriter
-                            options={{
-                                strings: [
-                                    "Software Developer",
-                                    "Front End Developer",
-                                ],
-                                autoStart: true,
-                                loop: true,
-                                deleteSpeed: 50,
-                            }}
-                        />
-                    </span>
-                </h1>
-                <p className='text-sm  mt-4 leading-normal md:leading-loose  md:text-base text-justify font-normal '>
-                    I am 23 years old from Morocco. My mission is to scale up your Web
-                    presence with high problem-solving skills and a huge passion for
-                    design. User interfaces with meaningful UX are what I strongly
-                    master!
-                </p>
-            </div>
-        </section>
+        <div className='flex flex-col relative h-screen  text-center md:text-left md:flex-row max-w-4xl mx-auto px-10 justify-evenly items-center '>
+
+            <h3 className='absolute top-24 uppercase tracking-[20px] text-gray-700 dark:text-gray-500 text-2xl'>
+                about
+            </h3>
+            <motion.img
+                initial={{
+                    x: -300,
+                    opacity: 0,
+                }}
+                transition={{
+                    duration: 1.2,
+                }}
+                whileInView={{
+                    x: 0,
+                    opacity: 1,
+                }}
+                viewport={{ once: true }}
+                src='/images/me2.jpeg'
+                className="-mb-20 md:mt-8 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-top object-cover
+                md:rounded-t-xl md:rounded-b-xl md:h-[330px] md:w-64 "
+            />
+        </div>
     );
 }
 

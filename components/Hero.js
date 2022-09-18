@@ -9,7 +9,7 @@ function Hero() {
         <div className='h-screen flex flex-col space-y-15 items-center justify-center text-center overflow-hidden'>
             <BackgroundCircles />
             <Image
-                src="/images/hero.jpeg"
+                src="/images/me1.jpeg"
                 alt="Hero Picture"
                 width={150}
                 height={150}
