@@ -1,5 +1,5 @@
-import React from 'react'
 import { motion } from 'framer-motion';
+import React from 'react';
 import ExperienceCard from './ExperienceCard';
 
 function Experience() {
@@ -15,7 +15,7 @@ function Experience() {
                 duration: 1.5
             }}
             className='flex flex-col relative h-screen overflow-hidden text-left md:flex-row mx-auto max-w-full px-10 xs:space-y-32 justify-evenly items-center'>
-            <h3 className='absolute top-24 uppercase tracking-[12px] text-gray-700 dark:text-gray-500 text-2xl z=10'>
+            <h3 className='absolute top-24 tracking-[12px] uppercase text-gray-700 dark:text-gray-500 text-2xl z=10'>
                 experience
             </h3>
 
