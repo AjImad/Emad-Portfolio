@@ -28,6 +28,9 @@ module.exports = {
       fontFamily: {
         customFont: ["Mulish", "sans-serif"],
       },
+      screens: {
+        xs: '540px'
+      }
     },
   },
   plugins: [

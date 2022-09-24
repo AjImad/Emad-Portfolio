@@ -14,12 +14,12 @@ function Experience() {
             transition={{
                 duration: 1.5
             }}
-            className='flex flex-col relative h-screen overflow-hidden text-left md:flex-row mx-auto max-w-full px-10 justify-evenly items-center'>
-            <h3 className='absolute top-24 uppercase tracking-[20px] text-gray-700 dark:text-gray-500 text-2xl'>
+            className='flex flex-col relative h-screen overflow-hidden text-left md:flex-row mx-auto max-w-full px-10 xs:space-y-32 justify-evenly items-center'>
+            <h3 className='absolute top-24 uppercase tracking-[12px] text-gray-700 dark:text-gray-500 text-2xl z=10'>
                 experience
             </h3>
 
-            <div className='w-full flex space-x-5 overflow-x-scroll p-10 snap-x snap-mandatory'>
+            <div className='w-full flex space-x-5 overflow-x-scroll p-10 snap-x snap-mandatory scrollbar scrollbar-thumb-[#c4acec] dark:scrollbar-thumb-orange-300 scrollbar-track-gray-400/20'>
                 <ExperienceCard />
                 <ExperienceCard />
                 <ExperienceCard />
