@@ -52,7 +52,7 @@ function Header() {
     }
 
     return (
-        <header className='sticky top-0 p-5 flex items-center justify-between max-w-4xl mx-auto z-20'>
+        <header className='sticky top-0 p-5 px-10 flex items-center justify-between max-w-4xl mx-auto z-20'>
             <motion.div
                 initial={{
                     x: -500,
