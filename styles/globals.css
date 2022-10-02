@@ -6,4 +6,8 @@
     .heroButton {
         @apply px-6 py-2 rounded-full uppercase text-sm tracking-widest text-gray-500 transition-all
     }
+
+    .contactInput {
+        @apply outline-none rounded-sm px-12 py-3 text-gray-500 placeholder-gray-500 transition-all
+    }
 }
