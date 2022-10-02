@@ -4,6 +4,8 @@ import BackgroundCircles from './BackgroundCircles';
 import Image from 'next/image'
 import Link from 'next/link';
 
+//------------------------------------------------------
+
 function Hero() {
     return (
         <div className='h-screen flex flex-col space-y-15 items-center justify-center text-center overflow-hidden'>

@@ -100,26 +100,6 @@ function Header() {
                 <Link href="" target="_blank">
                     <MailForward className='cursor-pointer' />
                 </Link>
-                {/* <SocialIcon
-                    url="https://www.linkedin.com/in/imad-ajbar-09a77720b/"
-                    bgColor='transparent'
-                    fgColor='gray'
-                    style={{ height: 40, width: 40 }}
-                />
-                <SocialIcon
-                    url="https://github.com/AjImad"
-                    bgColor='transparent'
-                    fgColor='gray'
-                    style={{ height: 40, width: 40 }}
-                /> */}
-                {/* <SocialIcon
-                    // url="https://github.com/AjImad"
-                    className='cursor-pointer'
-                    style={{ height: 40, width: 40 }}
-                    network='email'
-                    bgColor='transparent'
-                    fgColor='gray'
-                /> */}
             </motion.div>
         </header>
     )

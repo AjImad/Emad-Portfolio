@@ -2,10 +2,12 @@ import React from 'react';
 import Image from 'next/image'
 import { motion } from 'framer-motion';
 
+//------------------------------------------------------
+
 function ExperienceCard() {
     return (
         <article
-            className='flex flex-col rounded-lg p-10 md:py-7 items-center space-y-2 flex-shrink-0 w-[400px] md:w-[450px] xl:w-[800px] snap-start bg-[#88ccca] shadow-lg shadow-[#88ccca]/50 dark:shadow-inherit text-white dark:bg-[#292929]'
+            className='flex flex-col rounded-lg p-10 md:py-7 items-center space-y-2 flex-shrink-0 w-[400px] md:w-[450px] xl:w-[500px] snap-start bg-[#88ccca] shadow-lg shadow-[#88ccca]/50 dark:shadow-inherit text-white dark:bg-[#292929]'
         >
             <motion.div
                 initial={{
