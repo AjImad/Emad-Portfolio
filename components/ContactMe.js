@@ -2,27 +2,40 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { PhoneIcon, MapPinIcon, EnvelopeIcon } from '@heroicons/react/24/solid';
 import { useForm } from "react-hook-form";
+import { toast, Toaster } from 'react-hot-toast';
+import { init, sendForm } from 'emailjs-com';
+init('eP0HjPOh2MnotplIN');
 
 //------------------------------------------------------
 
 function ContactMe() {
 
-    const { register, handleSubmit, formState: { errors } } = useForm();
-
-    const onSubmit = (data) => {
-        console.log('data: ', data)
-    }
-
-    const onError = (error) => {
-        console.log('error: ', error)
-    }
+    const { register, handleSubmit, reset, formState: { errors } } = useForm();
 
     const registrationOption = {
         firstName: { required: 'First Name is required' },
         lastName: { required: 'Last Name is required' },
         email: { required: 'Email is required' },
-        email: { required: 'Message is required' }
+        message: { required: 'Message is required' }
     }
+
+    const sendEmail = async () => {
+        await sendForm('gmail_contact', 'template_bucs0go', '#contact-form')
+            .then(function (response) {
+                console.log('SUCCESS!', response.status, response.text);
+            }, function (error) {
+                console.log('FAILED...', error);
+            })
+    }
+
+    const onSubmit = async (data) => {
+        console.log('data: ', data)
+        // const sending = toast.loading('Sending...')
+        // await sendEmail();
+        toast.success('SUCCESS')
+        reset();
+    }
+
 
     return (
         <motion.div
@@ -60,7 +73,7 @@ function ContactMe() {
                     </div>
                 </div>
 
-                <form className='flex flex-col space-y-3 mx-auto' onSubmit={handleSubmit(onSubmit, onError)}>
+                <form id="contact-form" className='flex flex-col space-y-3 mx-auto' onSubmit={handleSubmit(onSubmit)}>
                     <div className='flex flex-col xs:flex-row xs:space-x-2 space-y-3 xs:space-y-0'>
                         <input name='firstName' {...register('firstName', registrationOption.firstName)}
                             className={`contactInput xs:px-6 ${errors?.firstName?.message ? 'border-b-2 border-red-500' : 'border-b-2 border-gray-500 dark:border-gray-300 dark:focus:border-orange-300 focus:border-[#88ccca]'} `}
@@ -78,7 +91,7 @@ function ContactMe() {
                         className={`contactInput xs:px-6 ${errors?.email?.message ? 'border-b-2 border-red-500' : 'border-b-2 border-gray-500 dark:border-gray-300 dark:focus:border-orange-300 focus:border-[#88ccca]'} `}
                         placeholder='example@example.com...*' />
                     <textarea name='message' {...register('message', registrationOption.message)}
-                        className='contactInput xs:px-6 border-b-2 border-gray-500 dark:border-gray-300 dark:focus:border-orange-300 focus:border-[#88ccca]'
+                        className={`contactInput xs:px-6 ${errors?.message?.message ? 'border-b-2 border-red-500' : 'border-b-2 border-gray-500 dark:border-gray-300 dark:focus:border-orange-300 focus:border-[#88ccca]'} `}
                         placeholder='Message...' />
                     <button className='space-y-4 bg-[#88ccca] shadow-lg shadow-[#88ccca]/50 dark:bg-orange-300 dark:shadow-orange-300/50 text-white font- py-3 rounded-lg' type='sumbit'>Submit</button>
                 </form>
