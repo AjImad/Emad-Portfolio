@@ -6,6 +6,7 @@ import Header from '../components/Header';
 import Hero from '../components/Hero';
 import Skills from '../components/Skills';
 import ContactMe from '../components/ContactMe';
+import BuyMeCoffe from '../components/BuyMeCoffe';
 
 //------------------------------------------------------
 
@@ -27,6 +28,7 @@ export default function Home() {
       </Head>
 
       <Header />
+
 
       <section id="hero" className='snap-start'>
         <Hero />
@@ -50,6 +52,8 @@ export default function Home() {
       <section className='snap-center'>
         <ContactMe />
       </section>
+
+      <BuyMeCoffe />
 
     </div>
     // {/* </motion.div > */ }
