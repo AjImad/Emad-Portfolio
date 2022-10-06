@@ -20,22 +20,20 @@ function ContactMe() {
     }
 
     const sendEmail = async () => {
+        const sending = toast.loading('Sending...')
         await sendForm('gmail_contact', 'template_bucs0go', '#contact-form')
             .then(function (response) {
-                console.log('SUCCESS!', response.status, response.text);
+                toast.success('Sent Successfully', { id: sending });
+                reset();
             }, function (error) {
-                console.log('FAILED...', error);
+                toast.error(`Failed! please try again`, { is: sending })
             })
     }
 
     const onSubmit = async (data) => {
         console.log('data: ', data)
-        // const sending = toast.loading('Sending...')
-        // await sendEmail();
-        toast.success('SUCCESS')
-        reset();
+        await sendEmail();
     }
-
 
     return (
         <motion.div
@@ -50,6 +48,10 @@ function ContactMe() {
             }}
             className='h-screen relative flex flex-col md:flex-row text-center md:text-left justify-evenly items-center mx-w-4xl px-10 mx-auto'
         >
+            <Toaster
+                position="top-center"
+                reverseOrder={false}
+            />
             <h3 className='text-2xl absolute top-24 tracking-[12px] uppercase text-gray-700 dark:text-gray-500'>Contact</h3>
 
             <div className='flex flex-col space-y-5 xs:mt-32'>
