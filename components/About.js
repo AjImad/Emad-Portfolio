@@ -34,11 +34,11 @@ function About() {
                     opacity: 1,
                 }}
                 viewport={{ once: true }}
-                src='/images/me2.jpeg'
+                src='/images/Aboutme.jpeg'
                 className="mt-32 md:mt-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-top object-cover
                 md:rounded-t-xl md:rounded-b-xl md:h-[330px] md:w-64 "
             />
-            <div classname='flex flex-col px-0 mt-10 md:px-12'>
+            <div className='flex flex-col px-0 mt-10 md:px-12'>
                 <h4 className='text-2xl md:text-3xl font-semibold'>
                     Here is a <span className='underline dark:decoration-orange-300 decoration-[#88ccca]'>little</span> background
                 </h4>

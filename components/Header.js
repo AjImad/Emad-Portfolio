@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { SocialIcon } from 'react-social-icons';
 import { motion } from 'framer-motion';
-import { BeakerIcon } from '@heroicons/react/24/outline'
 import {
     BrandGithub,
     BrandLinkedin,
@@ -11,7 +9,8 @@ import {
 } from 'tabler-icons-react';
 import { useTheme } from 'next-themes';
 import useSound from 'use-sound';
-import Link from 'next/link';
+
+//------------------------------------------------------
 
 function Header() {
 
@@ -24,9 +23,11 @@ function Header() {
             off: [300, 500],
         }
     })
+
     useEffect(() => {
         setMounted(true);
     }, [])
+
     const renderThemeChanger = () => {
         if (!mounted) return null;
         const currentTheme = theme === 'system' ? systemTheme : theme;
@@ -91,15 +92,15 @@ function Header() {
                 className='flex flex-row items-center space-x-2'
             >
                 {renderThemeChanger()}
-                <Link href="https://www.linkedin.com/in/imad-ajbar-09a77720b/" target="_blank">
+                <a href="https://www.linkedin.com/in/imad-ajbar-09a77720b/" target="_blank">
                     <BrandLinkedin className='cursor-pointer' />
-                </Link>
-                <Link href="https://github.com/AjImad" target="_blank">
+                </a>
+                <a href="https://github.com/AjImad" target="_blank">
                     <BrandGithub className='cursor-pointer' />
-                </Link>
-                <Link href="" target="_blank">
+                </a>
+                <a href="#contact">
                     <MailForward className='cursor-pointer' />
-                </Link>
+                </a>
             </motion.div>
         </header>
     )

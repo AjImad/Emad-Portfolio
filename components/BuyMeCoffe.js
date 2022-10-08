@@ -20,7 +20,7 @@ function BuyMeCoffe() {
                     transition={{
                         duration: .3,
                     }}
-                    class="absolute hidden group-hover:flex -left-12 -top-0 -translate-y-full w-48 px-2 py-1  rounded-xl text-center text-white text-sm after:content-[''] after:absolute after:left-1/2 after:top-[100%] after:-translate-x-1/2 ">
+                    className="absolute hidden group-hover:flex -left-12 -top-0 -translate-y-full w-48 px-2 py-1  rounded-xl text-center text-white text-sm after:content-[''] after:absolute after:left-1/2 after:top-[100%] after:-translate-x-1/2 ">
                     <img src='/images/buyCoffeText.svg' className='w-30 h-10 rounded-sm' />
                 </motion.span>
             </a>

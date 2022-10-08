@@ -5,6 +5,50 @@ import Skill from './Skill';
 //------------------------------------------------------
 
 function Skills() {
+
+    const skillsImages = [
+        {
+            src: '/images/javascriptl.svg',
+            rate: '85%',
+        },
+        {
+            src: '/images/typescript.svg',
+            rate: '85%',
+        },
+        {
+            src: '/images/React.webp',
+            rate: '80%'
+        },
+        {
+            src: '/images/nextjs.svg',
+            rate: '75%'
+        },
+        {
+            src: '/images/mui.svg',
+            rate: '85%'
+        },
+        {
+            src: '/images/redux.svg',
+            rate: '65%'
+        },
+        {
+            src: '/images/firebase.svg',
+            rate: '60%'
+        },
+        {
+            src: '/images/git.svg',
+            rate: '80%'
+        },
+        {
+            src: '/images/tailwindcss.svg',
+            rate: '70%',
+        },
+        {
+            src: '/images/nodejs.svg',
+            rate: '60%',
+        }
+    ]
+
     return (
         <motion.div
             initial={{
@@ -26,21 +70,11 @@ function Skills() {
             </h3>
 
             <div className=' grid grid-cols-4 gap-5 xs:mt-32'>
-                <Skill />
-                <Skill />
-                <Skill />
-                <Skill />
-                <Skill />
-                <Skill />
-                <Skill />
-                <Skill />
-                <Skill />
-                <Skill />
-                <Skill />
-                <Skill />
-                <Skill />
-                <Skill />
-                <Skill />
+                {
+                    skillsImages.map((skill, index) => (
+                        <Skill skillsImages={skill} />
+                    ))
+                }
             </div>
 
         </motion.div>
