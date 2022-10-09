@@ -8,45 +8,75 @@ function Skills() {
 
     const skillsImages = [
         {
-            src: '/images/javascriptl.svg',
+            src: '/images/skillsImgs/React.webp',
+            rate: '80%',
+            directionLeft: true,
+        },
+        {
+            src: '/images/skillsImgs/javascriptl.svg',
             rate: '85%',
+            directionLeft: true,
         },
         {
-            src: '/images/typescript.svg',
+            src: '/images/skillsImgs/nextjs.svg',
+            rate: '75%',
+            directionLeft: false,
+        },
+        {
+            src: '/images/skillsImgs/typescript.svg',
             rate: '85%',
+            directionLeft: false,
         },
         {
-            src: '/images/React.webp',
-            rate: '80%'
-        },
-        {
-            src: '/images/nextjs.svg',
-            rate: '75%'
-        },
-        {
-            src: '/images/mui.svg',
-            rate: '85%'
-        },
-        {
-            src: '/images/redux.svg',
-            rate: '65%'
-        },
-        {
-            src: '/images/firebase.svg',
-            rate: '60%'
-        },
-        {
-            src: '/images/git.svg',
-            rate: '80%'
-        },
-        {
-            src: '/images/tailwindcss.svg',
-            rate: '70%',
-        },
-        {
-            src: '/images/nodejs.svg',
+            src: '/images/skillsImgs/nodejs.svg',
             rate: '60%',
-        }
+            directionLeft: true,
+        },
+        {
+            src: '/images/skillsImgs/redux.svg',
+            rate: '65%',
+            directionLeft: true,
+        },
+        {
+            src: '/images/skillsImgs/mui.svg',
+            rate: '85%',
+            directionLeft: false,
+        },
+        {
+            src: '/images/skillsImgs/tailwindcss.svg',
+            rate: '70%',
+            directionLeft: false,
+        },
+        {
+            src: '/images/skillsImgs/firebase.svg',
+            rate: '60%',
+            directionLeft: true,
+        },
+        {
+            src: '/images/skillsImgs/html.svg',
+            rate: '90%',
+            directionLeft: false,
+        },
+        {
+            src: '/images/skillsImgs/css.svg',
+            rate: '85%',
+            directionLeft: false,
+        },
+        {
+            src: '/images/skillsImgs/git.svg',
+            rate: '80%',
+            directionLeft: false,
+        },
+        {
+            src: '/images/skillsImgs/mysql.svg',
+            rate: '60%',
+            directionLeft: true,
+        },
+        {
+            src: '/images/skillsImgs/python.svg',
+            rate: '70%',
+            directionLeft: false,
+        },
     ]
 
     return (

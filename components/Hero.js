@@ -27,8 +27,8 @@ function Hero() {
                             options={{
                                 strings: [
                                     "Hey There! 👋",
-                                    "The Name's Emad AJBAR",
-                                    "Software Engineering",
+                                    "Emad AJBAR",
+                                    "Software Engineer",
                                     "Front End Developer"
                                 ],
                                 autoStart: true,

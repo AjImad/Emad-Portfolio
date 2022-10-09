@@ -4,13 +4,13 @@ import Image from 'next/image'
 
 //------------------------------------------------------
 
-function Skill({ directionLeft, skillsImages }) {
+function Skill({ skillsImages }) {
     return (
         <div className='group relative flex cursor-pointer' key={skillsImages.rate}>
 
             <motion.div
                 initial={{
-                    x: directionLeft ? -200 : 200,
+                    x: skillsImages.directionLeft ? -200 : 200,
                     opacity: 0,
                 }}
                 whileInView={{
@@ -18,7 +18,7 @@ function Skill({ directionLeft, skillsImages }) {
                     opacity: 1
                 }}
                 transition={{
-                    duration: 1.5,
+                    duration: 1.2,
                 }}
                 className="flex justify-center items-center rounded-full border p-3 border-gray-500 object-cover w-16 h-16 filter group-hover:grayscale transition duration-300 ease-in-out"
             >

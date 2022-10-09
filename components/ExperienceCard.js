@@ -7,7 +7,7 @@ import { motion } from 'framer-motion';
 function ExperienceCard() {
     return (
         <article
-            className='flex flex-col rounded-lg p-10 md:py-7 items-center space-y-2 flex-shrink-0 w-[400px] md:w-[450px] xl:w-[500px] snap-start bg-[#88ccca] shadow-lg shadow-[#88ccca]/50 dark:shadow-inherit text-white dark:bg-[#292929]'
+            className='flex flex-col rounded-lg p-10 md:py-7 items-center space-y-2 flex-shrink-0 w-[400px] md:w-[450px] xl:w-[450px] snap-start bg-[#9c8c7a] shadow-lg shadow-[#9c8c7a] dark:shadow-inherit text-white dark:bg-[#292929]'
         >
             <motion.div
                 initial={{
@@ -32,9 +32,18 @@ function ExperienceCard() {
             </motion.div>
 
             <div className='px-0 md:px-10'>
-                <h4 className='text-2xl font-light'>Master Degree</h4>
-                <p className='font-medium text-lg mt-2'>System informatique et Mobile</p>
-                <p className='uppercase py-3 text-gray-200 dark:text-gray-500'>Started work... - Ended ...</p>
+                <h4 className='text-xl font-light'>Front End Engineer</h4>
+                <p className='font-medium text-sm mt-2'>PULL4YOU SERVICES S.A.R.L · Internship</p>
+                <div className='flex flex-row space-x-3 my-2'>
+                    <img src='/images/skillsImgs/React.webp' title='React JS' className='w-7 h-7' />
+                    <img src='/images/skillsImgs/typescript.svg' title='Typescript' className='w-7 h-7' />
+                    <img src='/images/skillsImgs/redux.svg' title='Redux' className='w-7 h-7' />
+                    <img src='/images/skillsImgs/mui.svg' title='Material UI' className='w-7 h-7' />
+                    <img src='/images/skillsImgs/github.svg' title='Github' className='w-7 h-7' />
+                    <img src='/images/skillsImgs/git.svg' title='Git' className='w-7 h-7' />
+                    <img src='/images/skillsImgs/trello.svg' title='Trello' className='w-7 h-7' />
+                </div>
+                <p className='uppercase py-1 text-gray-200 dark:text-gray-500'>Jul 2022 - Present · 4 mos</p>
                 <ul className='list-disc space-y-4 ml-5 text-sm '>
                     <li>Summery Points</li>
                     <li>Summery Points</li>

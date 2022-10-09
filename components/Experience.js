@@ -21,9 +21,7 @@ function Experience() {
                 experience
             </h3>
 
-            <div className='w-full flex space-x-5 overflow-x-scroll p-10 snap-x snap-mandatory scrollbar scrollbar-thumb-[#c4acec] dark:scrollbar-thumb-orange-300 scrollbar-track-gray-400/20'>
-                <ExperienceCard />
-                <ExperienceCard />
+            <div className='w-full flex space-x-5 md:justify-center overflow-x-scroll p-10 snap-x snap-mandatory scrollbar scrollbar-thumb-[#c5ac8f] dark:scrollbar-thumb-orange-300 scrollbar-track-gray-400/20'>
                 <ExperienceCard />
                 <ExperienceCard />
             </div>
