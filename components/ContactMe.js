@@ -2,6 +2,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { PhoneIcon, MapPinIcon, EnvelopeIcon } from '@heroicons/react/24/solid';
 import { useForm } from "react-hook-form";
+import { yupResolver } from '@hookform/resolvers/yup';
+import * as yup from "yup";
 import { toast, Toaster } from 'react-hot-toast';
 import { init, sendForm } from 'emailjs-com';
 init('eP0HjPOh2MnotplIN');
@@ -10,16 +12,25 @@ init('eP0HjPOh2MnotplIN');
 
 function ContactMe() {
 
-    const { register, handleSubmit, reset, formState: { errors } } = useForm();
+    const schema = yup.object().shape({
+        firstName: yup.string().required(),
+        lastName: yup.string().required(),
+        email: yup.string().required(),
+    })
 
-    const registrationOption = {
-        firstName: { required: 'First Name is required' },
-        lastName: { required: 'Last Name is required' },
-        email: { required: 'Email is required' },
-        message: { required: 'Message is required' }
-    }
+    // const defaultValues = {
+    //     firstName: 'imad',
+    //     lastName: 'ajbar',
+    //     email: 'ajbimd.hxh@gmail.com',
+    //     text_message: 'Hey There...'
+    // }
+
+    const { register, handleSubmit, reset, formState: { errors } } = useForm({
+        resolver: yupResolver(schema),
+    });
 
     const sendEmail = async () => {
+        console.log('test')
         const sending = toast.loading('Sending...')
         await sendForm('gmail_contact', 'template_bucs0go', '#contact-form')
             .then(function (response) {
@@ -30,10 +41,15 @@ function ContactMe() {
             })
     }
 
-    const onSubmit = async (data) => {
-        console.log('data: ', data)
-        await sendEmail();
+    const onSubmit = (data) => {
+        console.log(data)
+        // sendEmail();
     }
+
+    const onError = (error) => {
+        console.log('error: ', error)
+    }
+
 
     return (
         <motion.div
@@ -75,27 +91,52 @@ function ContactMe() {
                     </div>
                 </div>
 
-                <form id="contact-form" className='flex flex-col space-y-3 mx-auto' onSubmit={handleSubmit(onSubmit)}>
+                <form id="contact-form" className='flex flex-col space-y-3 mx-auto' onSubmit={handleSubmit(onSubmit, onError)}>
                     <div className='flex flex-col xs:flex-row xs:space-x-2 space-y-3 xs:space-y-0'>
-                        <input name='firstName' {...register('firstName', registrationOption.firstName)}
+                        <input name='firstName' {...register('firstName')}
+                            placeholder='First Name*'
+                            type='text'
+                            className={`contactInput xs:px-6 ${errors?.firstName?.message ? 'border-b-2 border-red-500' : 'border-b-2 border-gray-500 dark:border-gray-300 dark:focus:border-orange-300 focus:border-[#88ccca]'} `}
+                        />
+                        <input name='lastName' {...register('lastName')}
+                            placeholder='last Name*'
+                            type='text'
+                            className={`contactInput xs:px-6 ${errors?.lastName?.message ? 'border-b-2 border-red-500' : 'border-b-2 border-gray-500 dark:border-gray-300 dark:focus:border-orange-300 focus:border-[#88ccca]'} `}
+                        />
+                    </div>
+                    <input name='email' {...register('email')}
+                        placeholder='email*'
+                        type='text'
+                        className={`contactInput xs:px-6 ${errors?.email?.message ? 'border-b-2 border-red-500' : 'border-b-2 border-gray-500 dark:border-gray-300 dark:focus:border-orange-300 focus:border-[#88ccca]'} `}
+                    />
+                    <textarea
+                        type='text'
+                        placeholder='Your Message*'
+                        className={`contactInput xs:px-6 border-b-2 border-gray-500 dark:border-gray-300 dark:focus:border-orange-300 focus:border-[#88ccca] `}
+                    />
+                    {/* <div className='flex flex-col xs:flex-row xs:space-x-2 space-y-3 xs:space-y-0'>
+                        <input name='firstName' {...register('firstName')}
                             className={`contactInput xs:px-6 ${errors?.firstName?.message ? 'border-b-2 border-red-500' : 'border-b-2 border-gray-500 dark:border-gray-300 dark:focus:border-orange-300 focus:border-[#88ccca]'} `}
                             type='text'
                             placeholder='First Name...*'
                         />
 
-                        <input name='lastName' {...register('lastName', registrationOption.lastName)}
+                        <input name='lastName' {...register('lastName')}
                             className={`contactInput xs:px-6 ${errors?.lastName?.message ? 'border-b-2 border-red-500' : 'border-b-2 border-gray-500 dark:border-gray-300 dark:focus:border-orange-300 focus:border-[#88ccca]'} `}
                             type='text' placeholder='Last Name...*'
                         />
 
                     </div>
-                    <input name='email' type='email' {...register('email', registrationOption.email)}
+                    <input name='email' type='email' {...register('email')}
                         className={`contactInput xs:px-6 ${errors?.email?.message ? 'border-b-2 border-red-500' : 'border-b-2 border-gray-500 dark:border-gray-300 dark:focus:border-orange-300 focus:border-[#88ccca]'} `}
                         placeholder='example@example.com...*' />
-                    <textarea name='message' {...register('message', registrationOption.message)}
-                        className={`contactInput xs:px-6 ${errors?.message?.message ? 'border-b-2 border-red-500' : 'border-b-2 border-gray-500 dark:border-gray-300 dark:focus:border-orange-300 focus:border-[#88ccca]'} `}
-                        placeholder='Message...' />
-                    <button className='space-y-4 bg-[#88ccca] shadow-lg shadow-[#88ccca]/50 dark:bg-orange-300 dark:shadow-orange-300/50 text-white font- py-3 rounded-lg' type='sumbit'>Submit</button>
+                    <input
+                        name='text_message' {...register('text_message')}
+                        className={`contactInput xs:px-6 ${errors?.text_message?.message ? 'border-b-2 border-red-500' : 'border-b-2 border-gray-500 dark:border-gray-300 dark:focus:border-orange-300 focus:border-[#88ccca]'} `}
+                        placeholder='Your Message...'
+                    /> */}
+
+                    <button type='sumbit' className='cursor-pointers space-y-4 bg-[#88ccca] shadow-lg shadow-[#88ccca]/50 dark:bg-orange-300 dark:shadow-orange-300/50 text-white font- py-3 rounded-lg'>Submit</button>
                 </form>
             </div>
         </motion.div>

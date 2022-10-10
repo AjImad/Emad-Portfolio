@@ -102,7 +102,7 @@ function Skills() {
             <div className=' grid grid-cols-4 gap-5 xs:mt-32'>
                 {
                     skillsImages.map((skill, index) => (
-                        <Skill skillsImages={skill} />
+                        <Skill key={index} skillsImages={skill} />
                     ))
                 }
             </div>

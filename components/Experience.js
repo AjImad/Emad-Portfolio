@@ -21,7 +21,12 @@ function Experience() {
                 { imgSrc: '/images/skillsImgs/git.svg', title: 'Git' },
                 { imgSrc: '/images/skillsImgs/trello.svg', title: 'Trello' },
             ],
-            description: {},
+            description: [
+                'Development a Web Application of the transport management system for companies',
+                'Building Web Application',
+                'Developing Web UI',
+                'CRUD Operation using Axios'
+            ],
         },
         {
             companyPicture: '/images/sie.jfif',
@@ -37,8 +42,14 @@ function Experience() {
                 { imgSrc: '/images/skillsImgs/php.svg', title: 'PHP' },
                 { imgSrc: '/images/skillsImgs/github.svg', title: 'Github' },
                 { imgSrc: '/images/skillsImgs/git.svg', title: 'Git' },
+                { imgSrc: '/images/skillsImgs/sqlserver.svg', title: 'Sql Server' },
             ],
-            description: {},
+            description: [
+                'Development a web application based on Desktop application',
+                'Developing Web UI',
+                'Developing Backend using Php Native',
+                'creating Database using SqlServer'
+            ],
         },
 
     ]
@@ -62,7 +73,7 @@ function Experience() {
             <div className='w-full flex space-x-5 md:justify-center overflow-x-scroll p-10 snap-x snap-mandatory scrollbar scrollbar-thumb-[#c5ac8f] dark:scrollbar-thumb-orange-300 scrollbar-track-gray-400/20'>
                 {
                     contentExperienceCard.map((content, index) => (
-                        <ExperienceCard ExperienceContent={content} key={index} />
+                        <ExperienceCard key={index} ExperienceContent={content} />
                     ))
                 }
             </div>
