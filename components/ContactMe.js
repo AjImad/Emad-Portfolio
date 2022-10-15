@@ -16,6 +16,7 @@ function ContactMe() {
         firstName: yup.string().required(),
         lastName: yup.string().required(),
         email: yup.string().required(),
+        message: yup.string(),
     })
 
     // const defaultValues = {
@@ -30,7 +31,6 @@ function ContactMe() {
     });
 
     const sendEmail = async () => {
-        console.log('test')
         const sending = toast.loading('Sending...')
         await sendForm('gmail_contact', 'template_bucs0go', '#contact-form')
             .then(function (response) {
@@ -42,8 +42,8 @@ function ContactMe() {
     }
 
     const onSubmit = (data) => {
-        console.log(data)
-        // sendEmail();
+        // console.log(data)
+        sendEmail();
     }
 
     const onError = (error) => {
@@ -110,6 +110,8 @@ function ContactMe() {
                         className={`contactInput xs:px-6 ${errors?.email?.message ? 'border-b-2 border-red-500' : 'border-b-2 border-gray-500 dark:border-gray-300 dark:focus:border-orange-300 focus:border-[#88ccca]'} `}
                     />
                     <textarea
+                        name='message'
+                        {...register('message')}
                         type='text'
                         placeholder='Your Message*'
                         className={`contactInput xs:px-6 border-b-2 border-gray-500 dark:border-gray-300 dark:focus:border-orange-300 focus:border-[#88ccca] `}

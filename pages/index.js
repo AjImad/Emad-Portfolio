@@ -5,6 +5,7 @@ import Experience from '../components/Experience';
 import Header from '../components/Header';
 import Hero from '../components/Hero';
 import Skills from '../components/Skills';
+import Projects from '../components/Projects';
 import ContactMe from '../components/ContactMe';
 import BuyMeCoffe from '../components/BuyMeCoffe';
 
@@ -47,8 +48,10 @@ export default function Home() {
       </section>
 
       {/* Project */}
+      <section id="projects" className='snap-center'>
+        <Projects />
+      </section>
 
-      {/* Contact */}
       <section id="contact" className='snap-center'>
         <ContactMe />
       </section>
