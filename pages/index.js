@@ -48,7 +48,7 @@ export default function Home() {
       </section>
 
       {/* Project */}
-      <section id="projects" className='snap-center'>
+      <section id="projects" className='snap-start'>
         <Projects />
       </section>
 

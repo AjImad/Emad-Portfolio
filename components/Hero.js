@@ -70,7 +70,7 @@ function Hero() {
                             Skills
                         </button>
                     </Link>
-                    <Link href="#project">
+                    <Link href="#projects">
                         <button
                             className='heroButton
                              border dark:border-[#242424] dark:hover:border-[#F7AB0A]/40 dark:hover:text-[#F7AB0A]/40
