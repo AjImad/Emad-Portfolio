@@ -31,28 +31,27 @@ export default function Home() {
       <Header />
 
 
-      <section id="hero" className='snap-start'>
+      <section id="hero" className='snap-start select-none'>
         <Hero />
       </section>
 
-      <section id="about" className='snap-center'>
+      <section id="about" className='snap-center select-none'>
         <About />
       </section>
 
-      <section id="experience" className='snap-center'>
+      <section id="experience" className='snap-center select-none'>
         <Experience />
       </section>
 
-      <section id="skills" className='snap-center'>
+      <section id="skills" className='snap-center select-none'>
         <Skills />
       </section>
 
-      {/* Project */}
-      <section id="projects" className='snap-start'>
+      <section id="projects" className='snap-start select-none'>
         <Projects />
       </section>
 
-      <section id="contact" className='snap-center'>
+      <section id="contact" className='snap-center select-none'>
         <ContactMe />
       </section>
 

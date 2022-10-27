@@ -38,21 +38,12 @@ function About() {
                 className="mt-32 md:mt-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-top object-cover
                 md:rounded-t-xl md:rounded-b-xl md:h-[330px] md:w-64 "
             />
-            <div className='flex flex-col px-0 mt-10 md:px-12'>
-                <h4 className='text-2xl md:text-3xl font-semibold'>
-                    Here is a <span className='underline dark:decoration-orange-300 decoration-[#88ccca]'>little</span> background
+            <div className='flex flex-col px-0 mt-10 md:px-5'>
+                <h4 className='text-2xl md:text-3xl font-light uppercase'>
+                    Here is a <span className='underline dark:decoration-orange-300 decoration-[#88ccca]'>Little</span> Background
                 </h4>
-                <p className='text-sm mt-5'>
-                    I am 23 years old from Morocco. My mission is to scale up your Web
-                    presence with high problem-solving skills and a huge passion for
-                    design. User interfaces with meaningful UX are what I strongly
-                    master! I am 23 years old from Morocco. My mission is to scale up your Web
-                    presence with high problem-solving skills and a huge passion for
-                    design. User interfaces with meaningful UX are what I strongly
-                    master! I am 23 years old from Morocco. My mission is to scale up your Web
-                    presence with high problem-solving skills and a huge passion for
-                    design. User interfaces with meaningful UX are what I strongly
-                    master!
+                <p className='text-lg mt-5 leading-relaxed tracking-wide'>
+                    Hello, if you're wondering who is the person behind this work so this section is made for you, AJBAR Imad your new Friend based on Morocco, 23 years old master's degree student and this is my last year
                 </p>
             </div>
         </motion.div>

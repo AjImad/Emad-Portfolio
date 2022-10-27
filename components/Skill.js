@@ -6,7 +6,7 @@ import Image from 'next/image'
 
 function Skill({ skillsImages }) {
     return (
-        <div className='group relative flex cursor-pointer' key={skillsImages.rate}>
+        <div className='group relative flex cursor-pointer'>
 
             <motion.div
                 initial={{
@@ -15,7 +15,7 @@ function Skill({ skillsImages }) {
                 }}
                 whileInView={{
                     x: 0,
-                    opacity: 1
+                    opacity: 1,
                 }}
                 transition={{
                     duration: 1.2,
@@ -34,7 +34,7 @@ function Skill({ skillsImages }) {
                 </div>
             </div>
 
-        </div>
+        </div >
     )
 }
 
