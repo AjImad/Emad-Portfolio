@@ -39,11 +39,13 @@ function About() {
                 md:rounded-t-xl md:rounded-b-xl md:h-[330px] md:w-64 "
             />
             <div className='flex flex-col px-0 mt-10 md:px-5'>
-                <h4 className='text-2xl md:text-3xl font-light uppercase'>
+                <h4 className='text-2xl md:text-2xl font-light uppercase'>
                     Here is a <span className='underline dark:decoration-orange-300 decoration-[#88ccca]'>Little</span> Background
                 </h4>
-                <p className='text-lg mt-5 leading-relaxed tracking-wide'>
-                    Hello, if you're wondering who is the person behind this work so this section is made for you, AJBAR Imad your new Friend based on Morocco, 23 years old master's degree student and this is my last year
+                <p className='text-lg mt-5 font-thin leading-relaxed tracking-wide'>
+                    Hi there, if you're wondering who is the person behind this amazing work, this section is made just for you,  let me first introduce myself, i'm AJBAR Imad your new friend based on Tangier Morocco, a 23 years old master's degree student in his graduation year, a human that  love to talk and interact with other people.
+                    I am passionate about learning new technology, creating projects, and looking after new challenges.
+                    A programming enthusiast, books lover, gym rat and of course a coffee lover.
                 </p>
             </div>
         </motion.div>

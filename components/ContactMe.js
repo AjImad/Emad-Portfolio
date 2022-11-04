@@ -42,12 +42,7 @@ function ContactMe() {
     }
 
     const onSubmit = (data) => {
-        // console.log(data)
         sendEmail();
-    }
-
-    const onError = (error) => {
-        console.log('error: ', error)
     }
 
 
@@ -91,7 +86,7 @@ function ContactMe() {
                     </div>
                 </div>
 
-                <form id="contact-form" className='flex flex-col space-y-3 mx-auto' onSubmit={handleSubmit(onSubmit, onError)}>
+                <form id="contact-form" className='flex flex-col space-y-3 mx-auto' onSubmit={handleSubmit(onSubmit)}>
                     <div className='flex flex-col xs:flex-row xs:space-x-2 space-y-3 xs:space-y-0'>
                         <input name='firstName' {...register('firstName')}
                             placeholder='First Name*'

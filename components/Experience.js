@@ -23,7 +23,7 @@ function Experience() {
             ],
             description: [
                 'Development a Web Application of the transport management system for companies',
-                'Building Web Application',
+                'Using google api for displaying route in the UI',
                 'Developing Web UI',
                 'CRUD Operation using Axios'
             ],

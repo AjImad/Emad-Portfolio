@@ -24,14 +24,14 @@ function Projects() {
                 Projects
             </h3>
 
-            <div className='relative w-full flex overflow-x-scroll xs:mt-20 overflow-y-hidden snap-x snap-mandatory scrollbar scrollbar-thumb-[#c5ac8f] dark:scrollbar-thumb-orange-300 scrollbar-track-gray-400/20 z-20'>
+            <div className='relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory scrollbar scrollbar-thumb-[#c5ac8f] dark:scrollbar-thumb-orange-300 scrollbar-track-gray-400/20 z-20'>
                 {/* {
                     projects.map((project, index) => ( */}
                 <div className='w-screen flex-shrink-0 snap-center flex flex-col items-center justify-center space-y-5 p-20 md:p-44 h-screen'>
                     <img
                         src='./images/projectsImg/cloneDisney.png'
-                        alt='google-clone'
-                        className='w-auto h-auto xs:w-auto xs:h-64'
+                        alt='disney-clone'
+                        className='w-auto h-auto xs:w-auto xs:h-64 xs:mt-28'
                     />
                     <div className='flex flex-col space-y-5'>
                         <a href='https://disneyplus-clone-7ba28.web.app/' target='_blank'>
@@ -59,8 +59,8 @@ function Projects() {
                 <div className='w-screen flex-shrink-0 snap-center flex flex-col items-center justify-center space-y-5 p-20 md:p-44 h-screen'>
                     <img
                         src='./images/projectsImg/onlineStore.png'
-                        alt='google-clone'
-                        className='w-auto h-auto xs:w-auto xs:h-64'
+                        alt='onlineStore'
+                        className='w-auto h-auto xs:w-auto xs:h-64 xs:mt-28'
                     />
                     <div className='flex flex-col space-y-5'>
                         <a href='https://olinestore-80cfa.web.app/' target='_blank'>
@@ -89,8 +89,8 @@ function Projects() {
                 <div className='w-screen flex-shrink-0 snap-center flex flex-col items-center justify-center space-y-5 p-20 md:p-44 h-screen'>
                     <img
                         src='./images/projectsImg/cloneTiktok.png'
-                        alt='google-clone'
-                        className='w-auto h-auto xs:w-auto xs:h-64'
+                        alt='TikTok-clone'
+                        className='w-auto h-auto xs:w-auto xs:h-64 xs:mt-20'
                     />
                     <div className='flex flex-col space-y-5'>
                         <a href='https://tic-tok-96018.web.app/' target='_blank'>
