@@ -96,7 +96,7 @@ function Skills() {
             </h3>
 
             <h3 className='absolute top-36 tracking-[3px] text-sm uppercase text-gray-700 dark:text-gray-500 z=10'>
-                Hover over a skill for currency proficiency
+                Hover over a skill for current proficiency
             </h3>
 
             <div className=' grid grid-cols-4 gap-5 xs:mt-32'>
