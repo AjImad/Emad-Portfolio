@@ -7,7 +7,7 @@ import { motion } from 'framer-motion';
 function ExperienceCard({ ExperienceContent }) {
     return (
         <article
-            className='flex flex-col rounded-lg p-10 md:py-7 items-center space-y-2 flex-shrink-0 w-[400px] md:w-[450px] xl:w-[450px] snap-start bg-[#9c8c7a] shadow-lg shadow-[#9c8c7a] dark:shadow-inherit text-white dark:bg-[#292929]'
+            className='flex flex-col rounded-lg p-10 md:py-17 items-center space-y-2 flex-shrink-0 w-[400px] md:w-[450px] xl:w-[450px] snap-start bg-[#79B4B7] shadow-lg shadow-[#79B4B7] dark:shadow-inherit text-white dark:bg-[#292929]'
         >
             <motion.div
                 initial={{
@@ -35,7 +35,7 @@ function ExperienceCard({ ExperienceContent }) {
             <div className='px-0 md:px-5'>
                 <h4 className='text-xl font-light'>{ExperienceContent.titleJob}</h4>
                 <p className='font-medium text-sm mt-2'>{ExperienceContent.company}</p>
-                <div className='flex flex-row space-x-3 my-2'>
+                <div className='flex flex-row space-x-3 my-3'>
                     {
                         ExperienceContent.tools.map((image, index) => (
                             <img key={index} src={image.imgSrc} title={image.title} className='w-7 h-7' />

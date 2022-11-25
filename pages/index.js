@@ -55,9 +55,8 @@ export default function Home() {
         <ContactMe />
       </section>
 
-      <BuyMeCoffe />
+      {/* <BuyMeCoffe /> */}
 
     </div>
-    // {/* </motion.div > */ }
   )
 }

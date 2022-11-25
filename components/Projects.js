@@ -20,7 +20,7 @@ function Projects() {
             }}
             className='flex flex-col md:flex-row justify-evenly items-center overflow-hidden h-screen relative text-left mx-auto max-w-full px-10 z-0'
         >
-            <h3 className='absolute top-24 tracking-[12px] uppercase text-gray-700 dark:text-gray-500 text-2xl'>
+            <h3 className='absolute top-20 tracking-[12px] uppercase text-gray-700 dark:text-gray-500 text-2xl'>
                 Projects
             </h3>
 
@@ -28,11 +28,13 @@ function Projects() {
                 {/* {
                     projects.map((project, index) => ( */}
                 <div className='w-screen flex-shrink-0 snap-center flex flex-col items-center justify-center space-y-5 p-20 md:p-44 h-screen'>
-                    <img
-                        src='./images/projectsImg/cloneDisney.png'
-                        alt='disney-clone'
-                        className='w-auto h-auto xs:w-auto xs:h-64 xs:mt-28'
-                    />
+                    <a href='https://disneyplus-clone-7ba28.web.app/' target='_blank'>
+                        <img
+                            src='./images/projectsImg/cloneDisney.png'
+                            alt='disney-clone'
+                            className='w-auto h-auto xs:w-auto xs:h-64 xs:mt-28'
+                        />
+                    </a>
                     <div className='flex flex-col space-y-5'>
                         <a href='https://disneyplus-clone-7ba28.web.app/' target='_blank'>
                             <h4 className='text-xl xs:text-2xl font-semibold text-center space-y-3'>
@@ -57,11 +59,13 @@ function Projects() {
                     </div>
                 </div>
                 <div className='w-screen flex-shrink-0 snap-center flex flex-col items-center justify-center space-y-5 p-20 md:p-44 h-screen'>
-                    <img
-                        src='./images/projectsImg/onlineStore.png'
-                        alt='onlineStore'
-                        className='w-auto h-auto xs:w-auto xs:h-64 xs:mt-28'
-                    />
+                    <a href='https://olinestore-80cfa.web.app/' target='_blank'>
+                        <img
+                            src='./images/projectsImg/onlineStore.png'
+                            alt='onlineStore'
+                            className='w-auto h-auto xs:w-auto xs:h-64 xs:mt-28'
+                        />
+                    </a>
                     <div className='flex flex-col space-y-5'>
                         <a href='https://olinestore-80cfa.web.app/' target='_blank'>
                             <h4 className='text-xl xs:text-2xl font-semibold text-center space-y-3'>
@@ -86,37 +90,7 @@ function Projects() {
                         </p>
                     </div>
                 </div>
-                <div className='w-screen flex-shrink-0 snap-center flex flex-col items-center justify-center space-y-5 p-20 md:p-44 h-screen'>
-                    <img
-                        src='./images/projectsImg/cloneTiktok.png'
-                        alt='TikTok-clone'
-                        className='w-auto h-auto xs:w-auto xs:h-64 xs:mt-20'
-                    />
-                    <div className='flex flex-col space-y-5'>
-                        <a href='https://tic-tok-96018.web.app/' target='_blank'>
-                            <h4 className='text-xl xs:text-2xl font-semibold text-center space-y-3'>
-                                <span className='underline decoration-[#88ccca] dark:decoration-orange-300/30'>
-                                    Case Study 3 of 3:
-                                </span>{" "}
-                                TikTok Clone
-                            </h4>
-                            <div className='flex flex-row space-x-3 justify-center items-center mt-5'>
-                                <img src='/images/skillsImgs/React.webp' title='React Js' className='w-7 h-7' />
-                                <img src='/images/skillsImgs/javascriptl.svg' title='Javascript' className='w-7 h-7' />
-                                <img src='/images/skillsImgs/mui.svg' title='Material UI' className='w-7 h-7' />
-                                <img src='/images/skillsImgs/firebase.svg' title='Firebase' className='w-7 h-7' />
-                                <img src='/images/skillsImgs/git.svg' title='Git' className='w-7 h-7' />
-                                <img src='/images/skillsImgs/github.svg' title='Github' className='w-7 h-7' />
-                            </div>
-                        </a>
 
-                        <p className='text-justify md:text-center text-lg'>
-                            TikTok 2.0 app, is a simple web app that you can scroll over it and see the short videos
-                        </p>
-                    </div>
-                </div>
-                {/* ))
-                } */}
             </div>
 
             <div className='absolute top-[30%] w-full h-[300px] bg-[#9c8c7a]/20 dark:bg-orange-300/10 -skew-y-12' />

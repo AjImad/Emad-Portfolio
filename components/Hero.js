@@ -10,12 +10,13 @@ function Hero() {
     return (
         <div className='h-screen flex flex-col space-y-15 items-center justify-center text-center overflow-hidden'>
             <BackgroundCircles />
+
             <Image
-                src="/images/me1.jpeg"
+                src="/images/hero.png"
                 alt="Hero Picture"
-                width={150}
-                height={150}
-                className="relative rounded-full mx-auto object-cover"
+                width={180}
+                height={180}
+                className="relative rounded-full mx-auto object-cover object-top "
             />
             <div className='mt-5 z-20'>
                 <h2 className='text-sm uppercase text-gray-500 pb-2 tracking-[10px]'>

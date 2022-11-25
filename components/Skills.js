@@ -9,22 +9,22 @@ function Skills() {
     const skillsImages = [
         {
             src: '/images/skillsImgs/React.webp',
-            rate: '80%',
+            rate: '75%',
             directionLeft: true,
         },
         {
             src: '/images/skillsImgs/javascriptl.svg',
-            rate: '85%',
+            rate: '79%',
             directionLeft: true,
         },
         {
             src: '/images/skillsImgs/nextjs.svg',
-            rate: '75%',
+            rate: '65%',
             directionLeft: false,
         },
         {
             src: '/images/skillsImgs/typescript.svg',
-            rate: '85%',
+            rate: '79%',
             directionLeft: false,
         },
         {
@@ -39,7 +39,7 @@ function Skills() {
         },
         {
             src: '/images/skillsImgs/mui.svg',
-            rate: '85%',
+            rate: '80%',
             directionLeft: false,
         },
         {
@@ -91,7 +91,7 @@ function Skills() {
                 duration: 1.5
             }}
             className='flex relative flex-col text-center md:text-left md:flex-row max-w-[2000px] md:px-10 min-h-screen justify-center items-center'>
-            <h3 className='absolute top-24 tracking-[12px] uppercase text-gray-700 dark:text-gray-500 text-2xl z=10'>
+            <h3 className='absolute top-20 tracking-[12px] uppercase text-gray-700 dark:text-gray-500 text-2xl z=10'>
                 skills
             </h3>
 
