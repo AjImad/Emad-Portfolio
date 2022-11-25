@@ -28,18 +28,30 @@ function Projects() {
                 {/* {
                     projects.map((project, index) => ( */}
                 <div className='w-screen flex-shrink-0 snap-center flex flex-col items-center justify-center space-y-5 p-20 md:p-44 h-screen'>
-                    <a href='https://disneyplus-clone-7ba28.web.app/' target='_blank'>
+                    <motion.a href='https://disneyplus-clone-7ba28.web.app/' target='_blank'
+                        initial={{
+                            opacity: 0,
+                            y: -100
+                        }}
+                        whileInView={{
+                            opacity: 1,
+                            y: 0
+                        }}
+                        transition={{
+                            duration: 1.5,
+                        }}
+                    >
                         <img
                             src='./images/projectsImg/cloneDisney.png'
                             alt='disney-clone'
                             className='w-auto h-auto xs:w-auto xs:h-64 xs:mt-28'
                         />
-                    </a>
+                    </motion.a>
                     <div className='flex flex-col space-y-5'>
                         <a href='https://disneyplus-clone-7ba28.web.app/' target='_blank'>
                             <h4 className='text-xl xs:text-2xl font-semibold text-center space-y-3'>
                                 <span className='underline decoration-[#88ccca] dark:decoration-orange-300/30'>
-                                    Case Study 1 of 3:
+                                    Case Study 1 of 2:
                                 </span>{" "}
                                 Disney Clone
                             </h4>
@@ -59,18 +71,30 @@ function Projects() {
                     </div>
                 </div>
                 <div className='w-screen flex-shrink-0 snap-center flex flex-col items-center justify-center space-y-5 p-20 md:p-44 h-screen'>
-                    <a href='https://olinestore-80cfa.web.app/' target='_blank'>
+                    <motion.a href='https://olinestore-80cfa.web.app/' target='_blank'
+                        initial={{
+                            opacity: 0,
+                            y: -100,
+                        }}
+                        whileInView={{
+                            opacity: 1,
+                            y: 0,
+                        }}
+                        transition={{
+                            duration: 1.5
+                        }}
+                    >
                         <img
                             src='./images/projectsImg/onlineStore.png'
                             alt='onlineStore'
                             className='w-auto h-auto xs:w-auto xs:h-64 xs:mt-28'
                         />
-                    </a>
+                    </motion.a>
                     <div className='flex flex-col space-y-5'>
                         <a href='https://olinestore-80cfa.web.app/' target='_blank'>
                             <h4 className='text-xl xs:text-2xl font-semibold text-center space-y-3'>
                                 <span className='underline decoration-[#88ccca] dark:decoration-orange-300/30'>
-                                    Case Study 2 of 3:
+                                    Case Study 2 of 2:
                                 </span>{" "}
                                 eCommerce Store
                             </h4>
