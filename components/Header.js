@@ -92,10 +92,10 @@ function Header() {
                 className='flex flex-row items-center space-x-2'
             >
                 {renderThemeChanger()}
-                <a href="https://www.linkedin.com/in/imad-ajbar-09a77720b/" target="_blank">
+                <a href="https://www.linkedin.com/in/imad-ajbar-09a77720b/" target="_blank" rel="noopener noreferrer">
                     <BrandLinkedin className='cursor-pointer' />
                 </a>
-                <a href="https://github.com/AjImad" target="_blank">
+                <a href="https://github.com/AjImad" target="_blank" rel="noopener noreferrer">
                     <BrandGithub className='cursor-pointer' />
                 </a>
                 <a href="#contact">

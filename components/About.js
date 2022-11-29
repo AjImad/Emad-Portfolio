@@ -43,7 +43,7 @@ function About() {
                     Here is a <span className='underline dark:decoration-orange-300 decoration-[#88ccca]'>Little</span> Background
                 </h4>
                 <p className='text-lg mt-3 font-thin leading-relaxed tracking-wide text-justify'>
-                    Hi there, if you're wondering who is the person behind this amazing work, this section is made just for you,  let me first introduce myself, i'm AJBAR Imad your new friend based on Tangier Morocco, a 23 years old master's degree student in his graduation year, a human that  love to talk and interact with other people.
+                    Hi there, if you&apos;re wondering who is the person behind this amazing work, this section is made just for you,  let me first introduce myself, i&apos;m AJBAR Imad your new friend based on Tangier Morocco, a 23 years old master&apos;s degree student in his graduation year, a human that  love to talk and interact with other people.
                     I am passionate about learning new technology, creating projects, and looking after new challenges.
                     A programming enthusiast, books lover, gym rat and of course a coffee lover.
                 </p>

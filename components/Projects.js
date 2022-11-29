@@ -48,7 +48,7 @@ function Projects() {
                         />
                     </motion.a>
                     <div className='flex flex-col space-y-5'>
-                        <a href='https://disneyplus-clone-7ba28.web.app/' target='_blank'>
+                        <a href='https://disneyplus-clone-7ba28.web.app/' target='_blank' rel="noopener noreferrer">
                             <h4 className='text-xl xs:text-2xl font-semibold text-center space-y-3'>
                                 <span className='underline decoration-[#88ccca] dark:decoration-orange-300/30'>
                                     Case Study 1 of 2:
@@ -91,7 +91,7 @@ function Projects() {
                         />
                     </motion.a>
                     <div className='flex flex-col space-y-5'>
-                        <a href='https://olinestore-80cfa.web.app/' target='_blank'>
+                        <a href='https://olinestore-80cfa.web.app/' target='_blank' rel="noopener noreferrer">
                             <h4 className='text-xl xs:text-2xl font-semibold text-center space-y-3'>
                                 <span className='underline decoration-[#88ccca] dark:decoration-orange-300/30'>
                                     Case Study 2 of 2:
@@ -110,7 +110,7 @@ function Projects() {
                         </a>
 
                         <p className='text-justify md:text-center text-lg'>
-                            I built an eCommerce store that is a web app that has a Log In and Log Out Authentification with Google or Facebook, that I built from scratch, and actually it was a challenge for me to implement all the stuff that I've learned.
+                            I built an eCommerce store that is a web app that has a Log In and Log Out Authentification with Google or Facebook, that I built from scratch, and actually it was a challenge for me to implement all the stuff that I&apos;ve learned.
                         </p>
                     </div>
                 </div>
