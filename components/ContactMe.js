@@ -63,9 +63,9 @@ function ContactMe() {
                 position="top-center"
                 reverseOrder={false}
             />
-            <h3 className='text-2xl absolute top-20 tracking-[12px] uppercase text-gray-700 dark:text-gray-500'>Contact</h3>
+            <h3 className='text-xl md:text-2xl absolute top-24 tracking-[12px] uppercase text-gray-700 dark:text-gray-500'>Contact</h3>
 
-            <div className='flex flex-col space-y-5 xs:mt-32'>
+            <div className='flex flex-col space-y-5 mt-28'>
                 <h4 className='text-xl sm:text-2xl font-semibold text-center'>
                     I have got just what you need.{" "}
                     <span className='decoration-[#88ccca] dark:decoration-orange-300/90 underline'>Lets Talk.</span>
