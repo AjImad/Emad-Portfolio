@@ -11,18 +11,18 @@ function Hero() {
         <div className='h-screen flex flex-col space-y-15 items-center justify-center text-center overflow-hidden'>
             <BackgroundCircles />
 
-            <Image
+            <img
                 src="/images/hero.png"
                 alt="Hero Picture"
-                width={180}
-                height={180}
-                className="relative rounded-full mx-auto object-cover object-top "
+                // width={140}
+                // height={140}
+                className="relative rounded-full mx-auto object-cover object-top w-28 h-28 md:w-40 md:h-40"
             />
-            <div className='mt-5 z-20'>
+            <div className='mt-10 z-20 space-y-2'>
                 <h2 className='text-sm uppercase text-gray-500 pb-2 tracking-[10px]'>
-                    Software Enginner
+                    Software Engineer
                 </h2>
-                <h1 className='text-5xl lg:text-6xl font-semibold px-10'>
+                <h1 className='text-3xl md:text-5xl lg:text-6xl font-semibold px-10'>
                     <span className="text-[#88ccca] dark:text-orange-300">
                         <Typewriter
                             options={{

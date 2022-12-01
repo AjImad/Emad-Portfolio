@@ -18,16 +18,16 @@ function Projects() {
             transition={{
                 duration: 1.5,
             }}
-            className='flex flex-col md:flex-row justify-evenly items-center overflow-hidden h-screen relative text-left mx-auto max-w-full px-10 z-0'
+            className='flex flex-col md:flex-row justify-evenly items-center overflow-hidden h-screen relative text-left max-w-full px-10 z-0'
         >
-            <h3 className='absolute top-20 tracking-[12px] uppercase text-gray-700 dark:text-gray-500 text-2xl'>
+            <h3 className='absolute top-24 tracking-[12px] uppercase text-gray-700 dark:text-gray-500 text-xl md:text-2xl'>
                 Projects
             </h3>
 
-            <div className='relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory scrollbar scrollbar-thumb-[#c5ac8f] dark:scrollbar-thumb-orange-300 scrollbar-track-gray-400/20 z-20'>
+            <div className='relative w-full flex overflow-x-scroll mt-10 sm:mt-0 overflow-y-hidden snap-x snap-mandatory scrollbar scrollbar-thumb-[#c5ac8f] dark:scrollbar-thumb-orange-300 scrollbar-track-gray-400/20 z-20'>
                 {/* {
                     projects.map((project, index) => ( */}
-                <div className='w-screen flex-shrink-0 snap-center flex flex-col items-center justify-center space-y-5 p-20 md:p-44 h-screen'>
+                <div className='w-screen flex-shrink-0 snap-center flex flex-col items-center justify-center space-y-5 p-10 md:p-44 h-screen'>
                     <motion.a href='https://disneyplus-clone-7ba28.web.app/' target='_blank'
                         initial={{
                             opacity: 0,
@@ -44,7 +44,7 @@ function Projects() {
                         <img
                             src='./images/projectsImg/cloneDisney.png'
                             alt='disney-clone'
-                            className='w-auto h-auto xs:w-auto xs:h-64 xs:mt-28'
+                            className='w-auto h-36 sm:h-52 xs:mt-28'
                         />
                     </motion.a>
                     <div className='flex flex-col space-y-5'>
@@ -70,7 +70,7 @@ function Projects() {
                         </p>
                     </div>
                 </div>
-                <div className='w-screen flex-shrink-0 snap-center flex flex-col items-center justify-center space-y-5 p-20 md:p-44 h-screen'>
+                <div className='w-screen flex-shrink-0 snap-center flex flex-col items-center justify-center space-y-5 p-10 md:p-44 h-screen'>
                     <motion.a href='https://olinestore-80cfa.web.app/' target='_blank'
                         initial={{
                             opacity: 0,
@@ -87,10 +87,10 @@ function Projects() {
                         <img
                             src='./images/projectsImg/onlineStore.png'
                             alt='onlineStore'
-                            className='w-auto h-auto xs:w-auto xs:h-64 xs:mt-28'
+                            className='w-auto h-36 sm:h-52 xs:mt-28'
                         />
                     </motion.a>
-                    <div className='flex flex-col space-y-5'>
+                    <div className='flex flex-col space-y-5 w-full'>
                         <a href='https://olinestore-80cfa.web.app/' target='_blank' rel="noopener noreferrer">
                             <h4 className='text-xl xs:text-2xl font-semibold text-center space-y-3'>
                                 <span className='underline decoration-[#88ccca] dark:decoration-orange-300/30'>

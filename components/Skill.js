@@ -27,7 +27,7 @@ function Skill({ skillsImages }) {
 
             <motion.div
                 variants={boxVariants}
-                className="flex justify-center items-center rounded-full border p-3 border-gray-500 object-cover w-16 h-16 filter group-hover:grayscale transition duration-300 ease-in-out"
+                className="flex justify-center items-center rounded-full border p-3 border-gray-500 object-cover w-14 h-14 sm:w-16 sm:h-16 filter group-hover:grayscale transition duration-300 ease-in-out"
             >
                 <Image
                     src={skillsImages.src}

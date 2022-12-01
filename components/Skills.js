@@ -91,15 +91,15 @@ function Skills() {
                 duration: 1.5
             }}
             className='flex relative flex-col text-center md:text-left md:flex-row max-w-[2000px] md:px-10 min-h-screen justify-center items-center'>
-            <h3 className='absolute top-20 tracking-[12px] uppercase text-gray-700 dark:text-gray-500 text-2xl z=10'>
+            <h3 className='absolute top-24 tracking-[12px] uppercase text-gray-700 dark:text-gray-500 text-xl md:text-2xl z=10'>
                 skills
             </h3>
 
-            <h3 className='absolute top-36 tracking-[3px] text-sm uppercase text-gray-700 dark:text-gray-500 z=10'>
+            <h3 className='absolute top-44 md:top-40 tracking-[3px] text-xs uppercase text-gray-700 dark:text-gray-500 z=10'>
                 Hover over a skill for current proficiency
             </h3>
 
-            <div className=' grid grid-cols-4 gap-5 xs:mt-32'>
+            <div className=' grid grid-cols-4 gap-5 mt-16 md:mt-32'>
                 {
                     skillsImages.map((skill, index) => (
                         <Skill key={index} skillsImages={skill} />
