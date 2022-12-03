@@ -36,9 +36,9 @@ function About() {
                 viewport={{ once: true }}
                 src='/images/aboutme.png'
                 className="mt-20 md:mt-20 md:mb-0 flex-shrink-0 w-36 h-36 rounded-full object-top object-cover
-                md:rounded-t-xl md:rounded-b-xl md:h-[330px] md:w-64 "
+                md:rounded-t-xl md:rounded-b-xl md:h-[320px] md:w-64 "
             />
-            <div className='flex flex-col px-0 -mt-3 sm:mt-16 md:px-5 '>
+            <div className='flex flex-col px-0 -mt-3 md:mt-16 md:px-5 '>
                 <h4 className='text-xl md:text-2xl font-light uppercase'>
                     Here is a <span className='underline dark:decoration-orange-300 decoration-[#88ccca]'>Little</span> Background
                 </h4>
@@ -47,6 +47,7 @@ function About() {
                     I am passionate about learning new technology, creating projects, looking forward to a new challenge and great opportunity in the near future!.
                     A programming enthusiast, books lover, gym rat and of course a coffee lover.
                 </p>
+
             </div>
         </motion.div>
     );
