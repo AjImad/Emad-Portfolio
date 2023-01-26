@@ -71,20 +71,6 @@ function ContactMe() {
                     <span className='decoration-[#88ccca] dark:decoration-orange-300/90 underline'>Lets Talk.</span>
                 </h4>
 
-                <div className='space-y-3'>
-                    <div className='flex items-center space-x-5 justify-center'>
-                        <PhoneIcon className='text-[#88ccca] dark:text-orange-300 h-6 w-6 animate-pulse' />
-                        <p className='text-lg'>+212657709009</p>
-                    </div>
-                    <div className='flex items-center space-x-5 justify-center'>
-                        <EnvelopeIcon className='text-[#88ccca] dark:text-orange-300 h-6 w-6 animate-pulse' />
-                        <p>ajbar.imad.99@gmail.com</p>
-                    </div>
-                    <div className='flex items-center space-x-5 justify-center'>
-                        <MapPinIcon className='text-[#88ccca] dark:text-orange-300 h-6 w-6 animate-pulse' />
-                        <p>Morocco, Tangier</p>
-                    </div>
-                </div>
 
                 <form id="contact-form" className='flex flex-col space-y-3 mx-auto' onSubmit={handleSubmit(onSubmit)}>
                     <div className='flex flex-col xs:flex-row xs:space-x-2 space-y-3 xs:space-y-0'>
