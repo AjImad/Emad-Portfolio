@@ -9,9 +9,9 @@ function Experience() {
     const contentExperienceCard = [
         {
             companyPicture: '/images/pull4you.png',
-            titleJob: 'Full Stack Developer - Intern',
+            titleJob: 'Full Stack Developer',
             duration: 'FEB 2023 - JUL · 6 mos',
-            company: 'KubicBits · Inte rnship',
+            company: 'PULL4YOU SERVICES S.A.R.L · Intern',
             tools: [
                 { imgSrc: '/images/skillsImgs/React.webp', title: 'React JS' },
                 { imgSrc: '/images/skillsImgs/typescript.svg', title: 'Typescript' },
