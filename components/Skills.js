@@ -77,6 +77,16 @@ function Skills() {
             rate: '70%',
             directionLeft: false,
         },
+        {
+            src: '/images/skillsImgs/django.svg',
+            rate: '60%',
+            directionLeft: false,
+        },
+        {
+            src: '/images/skillsImgs/pytest.png',
+            rate: '60%',
+            directionLeft: false,
+        },
     ]
 
     return (

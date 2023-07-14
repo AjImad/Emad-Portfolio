@@ -9,9 +9,9 @@ function Experience() {
     const contentExperienceCard = [
         {
             companyPicture: '/images/pull4you.png',
-            titleJob: 'Front End Engineer',
-            duration: 'Jul 2022 - Present · 4 mos',
-            company: 'PULL4YOU SERVICES S.A.R.L · Internship',
+            titleJob: 'Full Stack Developer - Intern',
+            duration: 'FEB 2023 - JUL · 6 mos',
+            company: 'KubicBits · Inte rnship',
             tools: [
                 { imgSrc: '/images/skillsImgs/React.webp', title: 'React JS' },
                 { imgSrc: '/images/skillsImgs/typescript.svg', title: 'Typescript' },
@@ -20,11 +20,13 @@ function Experience() {
                 { imgSrc: '/images/skillsImgs/github.svg', title: 'Github' },
                 { imgSrc: '/images/skillsImgs/git.svg', title: 'Git' },
                 { imgSrc: '/images/skillsImgs/trello.svg', title: 'Trello' },
+                { imgSrc: '/images/skillsImgs/django.svg', title: 'Django' },
+                { imgSrc: '/images/skillsImgs/pytest.png', title: 'Pytest' },
             ],
             description: [
-                'Development a Web Application of the transport management system for companies',
-                'Using google api for displaying route in the UI',
-                'Developing Web UI',
+                'Develop and maintain web applications',
+                'Efficiently troubleshoot and debug issues',
+                'Collaborate with diverse teams to implement new features and enhance existing ones',
                 'CRUD Operation using Axios'
             ],
         },

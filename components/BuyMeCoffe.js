@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 function BuyMeCoffe() {
     return (
         <div className='sticky bottom-7 w-full flex justify-end items-center  cursor-pointer'>
-            <a href='https://www.buymeacoffee.com/ajbarimad' target='_blank' className='group relative flex mr-12 filter grayscale hover:grayscale-0 duration-300'
+            <a href='#' target='_blank' className='group relative flex mr-12 filter grayscale hover:grayscale-0 duration-300'
                 rel="noopener noreferrer"
             >
                 <img

@@ -24,7 +24,7 @@ function Projects() {
                 Projects
             </h3>
 
-            <div className='relative w-full flex overflow-x-scroll mt-10 sm:mt-0 overflow-y-hidden snap-x snap-mandatory scrollbar scrollbar-thumb-[#c5ac8f] dark:scrollbar-thumb-orange-300 scrollbar-track-gray-400/20 z-20'>
+            <div className='relative w-full flex overflow-x-scroll mt-10b sm:mt-0 overflow-y-hidden snap-x snap-mandatory scrollbar scrollbar-thumb-[#c5ac8f] dark:scrollbar-thumb-orange-300 scrollbar-track-gray-400/20 z-20'>
                 {/* {
                     projects.map((project, index) => ( */}
                 <div className='w-screen flex-shrink-0 snap-center flex flex-col items-center justify-center space-y-5 p-10 md:p-44 h-screen'>
